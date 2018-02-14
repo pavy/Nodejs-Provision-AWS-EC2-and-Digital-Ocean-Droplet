@@ -18,6 +18,7 @@ ii. Inserting same values into the database multiple times. Generally, the web f
 #### 2. Describe several issues related to management of your inventory.
 I faced the following isses while managing inventory file:
 - While provisioning AWS/DigitalOcean instances, I would rapidly create and delete them. But it would become an added responsibility to delete them from my inventory file. If not deleted, ansible will try connecting to the host and give host not found exception.
+- If the ssh key of any server is changed, the location of the new key file has to be updated.
 - In a large company with thousands of servers, managing the inventory file is very difficult. Properly tagging the running servers and the different states of those servers can be difficult. Like if 100 servers have old version of the product and 10 servers are upgraded. Then the inventory file should also reflect the change in state.
 
 #### 3. Describe two configuration models. What are disadvantages and advantages of each model?
