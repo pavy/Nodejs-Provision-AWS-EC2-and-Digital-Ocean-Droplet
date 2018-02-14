@@ -128,16 +128,4 @@ fs.readFile(pubKeyFilePath, {encoding: 'utf-8'},function(err, data){
 });
 
 
-/* 
-*/
-
-// Comment out when done.
-// https://developers.digitalocean.com/documentation/v2/#retrieve-an-existing-droplet-by-id
-// REMEMBER POST != GET
-// Most importantly, print out IP address!
-
-
-// #############################################
-// #5 In the command line, ping your server, make sure it is alive!
-// ping xx.xx.xx.xx
 
